@@ -1,0 +1,5 @@
+# Firebase Realtime Database : Firebase Realtime Database is a cloud-hosted NoSQL database provided by Google’s Firebase platform that enables you to store and sync data in real-time across all connected devices. It is a JSON-based tree structure database that allows applications to read and write data directly.
+
+# Firestore Database : Firestore Database (officially called Cloud Firestore) is a cloud-hosted NoSQL database provided by Google as part of the Firebase platform. It is designed to store, sync, and query data efficiently across web, mobile, and server applications. Unlike Firebase's Realtime Database, Firestore uses a more structured and flexible approach based on collections and documents.
+
+# Firebase Storage : Firebase Storage is a cloud-based storage solution provided by Google as part of the Firebase platform. It is designed to securely store and manage user-generated content such as images, videos, audio files, documents, and other binary data. Firebase Storage is backed by Google Cloud Storage, which ensures scalability, reliability, and high availability.
