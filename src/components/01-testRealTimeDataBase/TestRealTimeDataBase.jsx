@@ -1,25 +1,30 @@
 import React from "react";
 import { getDatabase, ref, set } from "firebase/database";
 
-import { app } from "../../Firebase";
+import app from "../../firebase-config";
 
 export default function TestRealTimeDataBase() {
-  const testRealTimeDataBase = (id, name, phoneNumber) => {
-    console.log(id, name, phoneNumber);
-
-    // firebase
-    const db = getDatabase(app);
-    set(ref(db, "users/" + id), {
-      username: name,
-      phoneNumber: phoneNumber,
-    });
+  // add test data
+  const testRealTimeDataBase = (id, name, phone) => {
+    try {
+      console.log(id, name, phone);
+      // firebase
+      const db = getDatabase(app);
+      set(ref(db, `users/${id}`), {
+        name,
+        phone,
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
+
   return (
-    <div style={{ backgroundColor: "lightblue" }}>
-      <h1>01 - TestRealTimeDataBase</h1>
+    <div style={{ backgroundColor: "lightblue", padding: "20px" }}>
+      <h1>01 - TestRealTimeDataBase d</h1>
       <button
         onClick={() =>
-          testRealTimeDataBase("ifsh034nf2730", "upama bora", "8085636185")
+          testRealTimeDataBase("ifsh034nf2732", "Rizwan Ahmed", "8085636181")
         }
       >
         TestRealTimeDataBase
