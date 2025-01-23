@@ -5,6 +5,7 @@ import AddRealTimeDataBase from "./components/02-addRealTimeDataBase/AddRealTime
 import RetrieveRealTimeDatabase from "./components/03-retrieveRealTimeDatabase/RetrieveRealTimeDatabase";
 import AddUpdateFirestore from "./components/04-addUpdateFirestore/AddUpdateFirestore";
 import RetrieveDeleteFirestore from "./components/05-retrieveDeleteFirestore/RetrieveDeleteFirestore";
+import Auth from "./components/06-auth/Auth";
 
 export default function App() {
   const [toBeUpdatedRealTimeDB, setToBeUpdatedRealTimeDB] = useState({});
@@ -29,6 +30,8 @@ export default function App() {
       <RetrieveDeleteFirestore
         setToBeUpdatedFirestore={setToBeUpdatedFirestore}
       />
+
+      <Auth />
     </div>
   );
 }
